@@ -2124,7 +2124,7 @@ Check the top-level render call using <` + c + ">.");
     Ge.Fragment = X, Ge.jsx = Pr, Ge.jsxs = kr;
   }()), Ge;
 }
-process.env.NODE_ENV === "production" ? Nr.exports = Bt() : Nr.exports = zt();
+"development" === "production" ? Nr.exports = Bt() : Nr.exports = zt();
 var pt = Nr.exports;
 const qt = () => /* @__PURE__ */ pt.jsx("div", { style: { minHeight: 400 }, children: /* @__PURE__ */ pt.jsx("iframe", { height: "100%", width: "100%", title: "tetris", src: "https://app.geckobooking.dk/site/iframe.js?icCode=ae60ba7c82b2eb666b63ac13480a18d9b3129" }) }), vt = {
   name: "tetris",
