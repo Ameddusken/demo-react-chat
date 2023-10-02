@@ -270,7 +270,7 @@ wy.exports;
 var Dw;
 function WW() {
   return Dw || (Dw = 1, function(e, t) {
-    process.env.NODE_ENV !== "production" && function() {
+    "development" !== "production" && function() {
       typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ < "u" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart == "function" && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(new Error());
       var n = "18.2.0", a = Symbol.for("react.element"), o = Symbol.for("react.portal"), s = Symbol.for("react.fragment"), f = Symbol.for("react.strict_mode"), p = Symbol.for("react.profiler"), m = Symbol.for("react.provider"), g = Symbol.for("react.context"), C = Symbol.for("react.forward_ref"), E = Symbol.for("react.suspense"), A = Symbol.for("react.suspense_list"), S = Symbol.for("react.memo"), _ = Symbol.for("react.lazy"), T = Symbol.for("react.offscreen"), R = Symbol.iterator, $ = "@@iterator";
       function M(G) {
@@ -1529,7 +1529,7 @@ Check the top-level render call using <` + Ve + ">.");
 }
 var Aw;
 function C9() {
-  return Aw || (Aw = 1, process.env.NODE_ENV === "production" ? I5.exports = YW() : I5.exports = WW()), I5.exports;
+  return Aw || (Aw = 1, "development" === "production" ? I5.exports = YW() : I5.exports = WW()), I5.exports;
 }
 /**
  * @license React
@@ -1570,7 +1570,7 @@ var ly = {};
  */
 var bw;
 function qW() {
-  return bw || (bw = 1, process.env.NODE_ENV !== "production" && function() {
+  return bw || (bw = 1, "development" !== "production" && function() {
     var e = C9(), t = Symbol.for("react.element"), n = Symbol.for("react.portal"), a = Symbol.for("react.fragment"), o = Symbol.for("react.strict_mode"), s = Symbol.for("react.profiler"), f = Symbol.for("react.provider"), p = Symbol.for("react.context"), m = Symbol.for("react.forward_ref"), g = Symbol.for("react.suspense"), C = Symbol.for("react.suspense_list"), E = Symbol.for("react.memo"), A = Symbol.for("react.lazy"), S = Symbol.for("react.offscreen"), _ = Symbol.iterator, T = "@@iterator";
     function R(z) {
       if (z === null || typeof z != "object")
@@ -2155,7 +2155,7 @@ Check the top-level render call using <` + je + ">.");
     ly.Fragment = a, ly.jsx = bi, ly.jsxs = Pi;
   }()), ly;
 }
-process.env.NODE_ENV === "production" ? G3.exports = KW() : G3.exports = qW();
+"development" === "production" ? G3.exports = KW() : G3.exports = qW();
 var Ga = G3.exports, Y3 = { exports: {} }, as = {}, L5 = { exports: {} }, _T = {};
 /**
  * @license React
@@ -2397,7 +2397,7 @@ var OT = {};
 var _w;
 function XW() {
   return _w || (_w = 1, function(e) {
-    process.env.NODE_ENV !== "production" && function() {
+    "development" !== "production" && function() {
       typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ < "u" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart == "function" && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(new Error());
       var t = !1, n = !1, a = 5;
       function o(qe, _t) {
@@ -2661,7 +2661,7 @@ function XW() {
 }
 var Ow;
 function qF() {
-  return Ow || (Ow = 1, process.env.NODE_ENV === "production" ? L5.exports = QW() : L5.exports = XW()), L5.exports;
+  return Ow || (Ow = 1, "development" === "production" ? L5.exports = QW() : L5.exports = XW()), L5.exports;
 }
 /**
  * @license React
@@ -8310,7 +8310,7 @@ var is = {};
  */
 var Rw;
 function ZW() {
-  return Rw || (Rw = 1, process.env.NODE_ENV !== "production" && function() {
+  return Rw || (Rw = 1, "development" !== "production" && function() {
     typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ < "u" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart == "function" && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(new Error());
     var e = C9(), t = qF(), n = e.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED, a = !1;
     function o(r) {
@@ -21689,7 +21689,7 @@ You might need to use a local HTTP server (instead of file://): https://reactjs.
 }
 function QF() {
   if (!(typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ > "u" || typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE != "function")) {
-    if (process.env.NODE_ENV !== "production")
+    if ("development" !== "production")
       throw new Error("^_^");
     try {
       __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE(QF);
@@ -21698,9 +21698,9 @@ function QF() {
     }
   }
 }
-process.env.NODE_ENV === "production" ? (QF(), Y3.exports = JW()) : Y3.exports = ZW();
+"development" === "production" ? (QF(), Y3.exports = JW()) : Y3.exports = ZW();
 var XF = Y3.exports, W3, j5 = XF;
-if (process.env.NODE_ENV === "production")
+if ("development" === "production")
   W3 = j5.createRoot, j5.hydrateRoot;
 else {
   var Nw = j5.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
@@ -49618,7 +49618,7 @@ var ia = {};
  */
 var Zx;
 function F0e() {
-  return Zx || (Zx = 1, process.env.NODE_ENV !== "production" && function() {
+  return Zx || (Zx = 1, "development" !== "production" && function() {
     var e = typeof Symbol == "function" && Symbol.for, t = e ? Symbol.for("react.element") : 60103, n = e ? Symbol.for("react.portal") : 60106, a = e ? Symbol.for("react.fragment") : 60107, o = e ? Symbol.for("react.strict_mode") : 60108, s = e ? Symbol.for("react.profiler") : 60114, f = e ? Symbol.for("react.provider") : 60109, p = e ? Symbol.for("react.context") : 60110, m = e ? Symbol.for("react.async_mode") : 60111, g = e ? Symbol.for("react.concurrent_mode") : 60111, C = e ? Symbol.for("react.forward_ref") : 60112, E = e ? Symbol.for("react.suspense") : 60113, A = e ? Symbol.for("react.suspense_list") : 60120, S = e ? Symbol.for("react.memo") : 60115, _ = e ? Symbol.for("react.lazy") : 60116, T = e ? Symbol.for("react.block") : 60121, R = e ? Symbol.for("react.fundamental") : 60117, $ = e ? Symbol.for("react.responder") : 60118, M = e ? Symbol.for("react.scope") : 60119;
     function j(Oe) {
       return typeof Oe == "string" || typeof Oe == "function" || // Note: its typeof might be other than 'symbol' or 'number' if it's a polyfill.
@@ -49701,7 +49701,7 @@ function F0e() {
 }
 var eB;
 function cU() {
-  return eB || (eB = 1, process.env.NODE_ENV === "production" ? uC.exports = M0e() : uC.exports = F0e()), uC.exports;
+  return eB || (eB = 1, "development" === "production" ? uC.exports = M0e() : uC.exports = F0e()), uC.exports;
 }
 /*
 object-assign
@@ -49774,7 +49774,7 @@ function I0e() {
   aB = 1;
   var e = function() {
   };
-  if (process.env.NODE_ENV !== "production") {
+  if ("development" !== "production") {
     var t = i6(), n = {}, a = fU();
     e = function(s) {
       var f = "Warning: " + s;
@@ -49786,7 +49786,7 @@ function I0e() {
     };
   }
   function o(s, f, p, m, g) {
-    if (process.env.NODE_ENV !== "production") {
+    if ("development" !== "production") {
       for (var C in s)
         if (a(s, C)) {
           var E;
@@ -49814,7 +49814,7 @@ function I0e() {
     }
   }
   return o.resetWarningCache = function() {
-    process.env.NODE_ENV !== "production" && (n = {});
+    "development" !== "production" && (n = {});
   }, b3 = o, b3;
 }
 var S3, iB;
@@ -49824,7 +49824,7 @@ function L0e() {
   iB = 1;
   var e = cU(), t = P0e(), n = i6(), a = fU(), o = I0e(), s = function() {
   };
-  process.env.NODE_ENV !== "production" && (s = function(p) {
+  "development" !== "production" && (s = function(p) {
     var m = "Warning: " + p;
     typeof console < "u" && console.error(m);
     try {
@@ -49871,7 +49871,7 @@ function L0e() {
     }
     T.prototype = Error.prototype;
     function R(B) {
-      if (process.env.NODE_ENV !== "production")
+      if ("development" !== "production")
         var x = {}, H = 0;
       function Ee(ke, Ae, xe, Be, Ne, We, pt) {
         if (Be = Be || A, We = We || xe, pt !== n) {
@@ -49880,7 +49880,7 @@ function L0e() {
               "Calling PropTypes validators directly is not supported by the `prop-types` package. Use `PropTypes.checkPropTypes()` to call them. Read more at http://fb.me/use-check-prop-types"
             );
             throw Oe.name = "Invariant Violation", Oe;
-          } else if (process.env.NODE_ENV !== "production" && typeof console < "u") {
+          } else if ("development" !== "production" && typeof console < "u") {
             var Pt = Be + ":" + xe;
             !x[Pt] && // Avoid spamming the console because they are often not actionable except for lib authors
             H < 3 && (s(
@@ -49962,7 +49962,7 @@ function L0e() {
     }
     function U(B) {
       if (!Array.isArray(B))
-        return process.env.NODE_ENV !== "production" && (arguments.length > 1 ? s(
+        return "development" !== "production" && (arguments.length > 1 ? s(
           "Invalid arguments supplied to oneOf, expected an array, got " + arguments.length + " arguments. A common mistake is to write oneOf(x, y, z) instead of oneOf([x, y, z])."
         ) : s("Invalid argument supplied to oneOf, expected an array.")), f;
       function x(H, Ee, fe, ke, Ae) {
@@ -49996,7 +49996,7 @@ function L0e() {
     }
     function ne(B) {
       if (!Array.isArray(B))
-        return process.env.NODE_ENV !== "production" && s("Invalid argument supplied to oneOfType, expected an instance of array."), f;
+        return "development" !== "production" && s("Invalid argument supplied to oneOfType, expected an instance of array."), f;
       for (var x = 0; x < B.length; x++) {
         var H = B[x];
         if (typeof H != "function")
@@ -50188,7 +50188,7 @@ function j0e() {
     return s.PropTypes = s, s;
   }, _3;
 }
-if (process.env.NODE_ENV !== "production") {
+if ("development" !== "production") {
   var U0e = cU(), $0e = !0;
   wb.exports = L0e()(U0e.isElement, $0e);
 } else
@@ -52411,8 +52411,8 @@ var pve = {
   strokeMiterlimit: 1,
   strokeOpacity: 1,
   strokeWidth: 1
-}, F0 = typeof process < "u" && process.env !== void 0 && (process.env.REACT_APP_SC_ATTR || process.env.SC_ATTR) || "data-styled", A6 = typeof window < "u" && "HTMLElement" in window, hve = !!(typeof SC_DISABLE_SPEEDY == "boolean" ? SC_DISABLE_SPEEDY : typeof process < "u" && process.env !== void 0 && process.env.REACT_APP_SC_DISABLE_SPEEDY !== void 0 && process.env.REACT_APP_SC_DISABLE_SPEEDY !== "" ? process.env.REACT_APP_SC_DISABLE_SPEEDY !== "false" && process.env.REACT_APP_SC_DISABLE_SPEEDY : typeof process < "u" && process.env !== void 0 && process.env.SC_DISABLE_SPEEDY !== void 0 && process.env.SC_DISABLE_SPEEDY !== "" ? process.env.SC_DISABLE_SPEEDY !== "false" && process.env.SC_DISABLE_SPEEDY : process.env.NODE_ENV !== "production"), TB = /invalid hook call/i, fC = /* @__PURE__ */ new Set(), mve = function(e, t) {
-  if (process.env.NODE_ENV !== "production") {
+}, F0 = typeof process < "u" && process.env !== void 0 && (process.env.REACT_APP_SC_ATTR || process.env.SC_ATTR) || "data-styled", A6 = typeof window < "u" && "HTMLElement" in window, hve = !!(typeof SC_DISABLE_SPEEDY == "boolean" ? SC_DISABLE_SPEEDY : typeof process < "u" && process.env !== void 0 && process.env.REACT_APP_SC_DISABLE_SPEEDY !== void 0 && process.env.REACT_APP_SC_DISABLE_SPEEDY !== "" ? process.env.REACT_APP_SC_DISABLE_SPEEDY !== "false" && process.env.REACT_APP_SC_DISABLE_SPEEDY : typeof process < "u" && process.env !== void 0 && process.env.SC_DISABLE_SPEEDY !== void 0 && process.env.SC_DISABLE_SPEEDY !== "" ? process.env.SC_DISABLE_SPEEDY !== "false" && process.env.SC_DISABLE_SPEEDY : "development" !== "production"), TB = /invalid hook call/i, fC = /* @__PURE__ */ new Set(), mve = function(e, t) {
+  if ("development" !== "production") {
     var n = t ? ' with the id of "'.concat(t, '"') : "", a = "The component ".concat(e).concat(n, ` has been created dynamically.
 `) + `You may see this warning because you've called styled inside another component.
 To resolve this only create new StyledComponents outside of any render method and function component.`, o = console.error;
@@ -52457,10 +52457,10 @@ function Cve(e) {
   return Ib(d$(e) >>> 0);
 }
 function p$(e) {
-  return process.env.NODE_ENV !== "production" && typeof e == "string" && e || e.displayName || e.name || "Component";
+  return "development" !== "production" && typeof e == "string" && e || e.displayName || e.name || "Component";
 }
 function B3(e) {
-  return typeof e == "string" && (process.env.NODE_ENV === "production" || e.charAt(0) === e.charAt(0).toLowerCase());
+  return typeof e == "string" && ("development" === "production" || e.charAt(0) === e.charAt(0).toLowerCase());
 }
 var h$ = typeof Symbol == "function" && Symbol.for, m$ = h$ ? Symbol.for("react.memo") : 60115, Dve = h$ ? Symbol.for("react.forward_ref") : 60112, Ave = { childContextTypes: !0, contextType: !0, contextTypes: !0, defaultProps: !0, displayName: !0, getDefaultProps: !0, getDerivedStateFromError: !0, getDerivedStateFromProps: !0, mixins: !0, propTypes: !0, type: !0 }, Tve = { name: !0, length: !0, prototype: !0, caller: !0, callee: !0, arguments: !0, arity: !0 }, v$ = { $$typeof: !0, compare: !0, defaultProps: !0, displayName: !0, propTypes: !0, type: !0 }, bve = ((x3 = {})[Dve] = { $$typeof: !0, render: !0, defaultProps: !0, displayName: !0, propTypes: !0 }, x3[m$] = v$, x3);
 function _B(e) {
@@ -52522,7 +52522,7 @@ function Lb(e, t, n) {
 function b6(e, t) {
   Object.defineProperty(e, "toString", { value: t });
 }
-var Rve = process.env.NODE_ENV !== "production" ? { 1: `Cannot create styled-component for component: %s.
+var Rve = "development" !== "production" ? { 1: `Cannot create styled-component for component: %s.
 
 `, 2: `Can't collect styles once you've consumed a \`ServerStyleSheet\`'s styles! \`ServerStyleSheet\` is a one off instance for each server-side render cycle.
 
@@ -52576,7 +52576,7 @@ function Nve() {
 function Tv(e) {
   for (var t = [], n = 1; n < arguments.length; n++)
     t[n - 1] = arguments[n];
-  return process.env.NODE_ENV === "production" ? new Error("An error occurred. See https://github.com/styled-components/styled-components/blob/main/packages/styled-components/src/utils/errors.md#".concat(e, " for more information.").concat(t.length > 0 ? " Args: ".concat(t.join(", ")) : "")) : new Error(Nve.apply(void 0, Jm([Rve[e]], t, !1)).trim());
+  return "development" === "production" ? new Error("An error occurred. See https://github.com/styled-components/styled-components/blob/main/packages/styled-components/src/utils/errors.md#".concat(e, " for more information.").concat(t.length > 0 ? " Args: ".concat(t.join(", ")) : "")) : new Error(Nve.apply(void 0, Jm([Rve[e]], t, !1)).trim());
 }
 var kve = function() {
   function e(t) {
@@ -52619,7 +52619,7 @@ var kve = function() {
   for (; u2.has(M3); )
     M3++;
   var t = M3++;
-  if (process.env.NODE_ENV !== "production" && ((0 | t) < 0 || t > 1073741824))
+  if ("development" !== "production" && ((0 | t) < 0 || t > 1073741824))
     throw Tv(16, "".concat(t));
   return wC.set(e, t), u2.set(t, e), t;
 }, xve = function(e, t) {
@@ -52843,7 +52843,7 @@ function O0(e, t, n, a) {
     if (!nv(s = e) || s.prototype && s.prototype.isReactComponent || !t)
       return [e];
     var o = e(t);
-    return process.env.NODE_ENV === "production" || typeof o != "object" || Array.isArray(o) || o instanceof xB || rv(o) || o === null || console.error("".concat(p$(e), " is not a styled component and cannot be referred to via component selector. See https://www.styled-components.com/docs/advanced#referring-to-other-components for more details.")), O0(o, t, n, a);
+    return "development" === "production" || typeof o != "object" || Array.isArray(o) || o instanceof xB || rv(o) || o === null || console.error("".concat(p$(e), " is not a styled component and cannot be referred to via component selector. See https://www.styled-components.com/docs/advanced#referring-to-other-components for more details.")), O0(o, t, n, a);
   }
   var s;
   return e instanceof xB ? n ? (e.inject(n, a), [e.getName(a)]) : [e] : rv(e) ? T$(e) : Array.isArray(e) ? Array.prototype.concat.apply(u4, e.map(function(f) {
@@ -52860,7 +52860,7 @@ function Wve(e) {
 }
 var Kve = d$("6.0.3"), qve = function() {
   function e(t, n, a) {
-    this.rules = t, this.staticRulesId = "", this.isStatic = process.env.NODE_ENV === "production" && (a === void 0 || a.isStatic) && Wve(t), this.componentId = n, this.baseHash = E0(Kve, n), this.baseStyle = a, E$.registerId(n);
+    this.rules = t, this.staticRulesId = "", this.isStatic = "development" === "production" && (a === void 0 || a.isStatic) && Wve(t), this.componentId = n, this.baseHash = E0(Kve, n), this.baseStyle = a, E$.registerId(n);
   }
   return e.prototype.generateAndInjectStyles = function(t, n, a) {
     var o = this.baseStyle ? this.baseStyle.generateAndInjectStyles(t, n, a) : "";
@@ -52879,7 +52879,7 @@ var Kve = d$("6.0.3"), qve = function() {
       for (var m = E0(this.baseHash, a.hash), g = "", C = 0; C < this.rules.length; C++) {
         var E = this.rules[C];
         if (typeof E == "string")
-          g += E, process.env.NODE_ENV !== "production" && (m = E0(m, E));
+          g += E, "development" !== "production" && (m = E0(m, E));
         else if (E) {
           var A = RB(O0(E, t, n, a));
           m = E0(m, A), g += A;
@@ -52918,7 +52918,7 @@ function Qve(e, t, n) {
   function M(W, F) {
     return function(k, U, re) {
       var ne = k.attrs, Y = k.componentStyle, ce = k.defaultProps, Te = k.foldedComponentIds, te = k.styledComponentId, Z = k.target, J = Ut.useContext(b$), se = kB(), X = k.shouldForwardProp || se.shouldForwardProp;
-      process.env.NODE_ENV !== "production" && Xe.useDebugValue(te);
+      "development" !== "production" && Xe.useDebugValue(te);
       var ie = function(fe, ke, Ae) {
         for (var xe, Be = ss(ss({}, ke), { className: void 0, theme: Ae }), Ne = 0; Ne < fe.length; Ne += 1) {
           var We = nv(xe = fe[Ne]) ? xe(Be) : xe;
@@ -52928,19 +52928,19 @@ function Qve(e, t, n) {
         return ke.className && (Be.className = A0(Be.className, ke.className)), Be;
       }(ne, U, vve(U, J, ce) || tv), oe = ie.as || Z, B = {};
       for (var x in ie)
-        ie[x] === void 0 || x[0] === "$" || x === "as" || x === "theme" || (x === "forwardedAs" ? B.as = ie.forwardedAs : X && !X(x, oe) || (B[x] = ie[x], X || process.env.NODE_ENV !== "development" || Wme(x) || MB.has(x) || (MB.add(x), console.warn('styled-components: it looks like an unknown prop "'.concat(x, '" is being sent through to the DOM, which will likely trigger a React console error. If you would like automatic filtering of unknown props, you can opt-into that behavior via `<StyleSheetManager shouldForwardProp={...}>` (connect an API like `@emotion/is-prop-valid`) or consider using transient props (`$` prefix for automatic filtering.)')))));
+        ie[x] === void 0 || x[0] === "$" || x === "as" || x === "theme" || (x === "forwardedAs" ? B.as = ie.forwardedAs : X && !X(x, oe) || (B[x] = ie[x], X || "development" !== "development" || Wme(x) || MB.has(x) || (MB.add(x), console.warn('styled-components: it looks like an unknown prop "'.concat(x, '" is being sent through to the DOM, which will likely trigger a React console error. If you would like automatic filtering of unknown props, you can opt-into that behavior via `<StyleSheetManager shouldForwardProp={...}>` (connect an API like `@emotion/is-prop-valid`) or consider using transient props (`$` prefix for automatic filtering.)')))));
       var H = function(fe, ke) {
         var Ae = kB(), xe = fe.generateAndInjectStyles(ke, Ae.styleSheet, Ae.stylis);
-        return process.env.NODE_ENV !== "production" && Xe.useDebugValue(xe), xe;
+        return "development" !== "production" && Xe.useDebugValue(xe), xe;
       }(Y, ie);
-      process.env.NODE_ENV !== "production" && k.warnTooManyClasses && k.warnTooManyClasses(H);
+      "development" !== "production" && k.warnTooManyClasses && k.warnTooManyClasses(H);
       var Ee = A0(Te, te);
       return H && (Ee += " " + H), ie.className && (Ee += " " + ie.className), B[B3(oe) && !f$.has(oe) ? "class" : "className"] = Ee, B.ref = re, Xe.createElement(oe, B);
     }(j, W, F);
   }
-  process.env.NODE_ENV !== "production" && (M.displayName = E);
+  "development" !== "production" && (M.displayName = E);
   var j = Ut.forwardRef(M);
-  return j.attrs = S, j.componentStyle = $, j.shouldForwardProp = _, process.env.NODE_ENV !== "production" && (j.displayName = E), j.foldedComponentIds = a ? A0(o.foldedComponentIds, o.styledComponentId) : "", j.styledComponentId = A, j.target = a ? o.target : e, Object.defineProperty(j, "defaultProps", { get: function() {
+  return j.attrs = S, j.componentStyle = $, j.shouldForwardProp = _, "development" !== "production" && (j.displayName = E), j.foldedComponentIds = a ? A0(o.foldedComponentIds, o.styledComponentId) : "", j.styledComponentId = A, j.target = a ? o.target : e, Object.defineProperty(j, "defaultProps", { get: function() {
     return this._foldedDefaultProps;
   }, set: function(W) {
     this._foldedDefaultProps = a ? function(F) {
@@ -52950,7 +52950,7 @@ function Qve(e, t, n) {
         Lb(F, ne[re], !0);
       return F;
     }({}, o.defaultProps, W) : W;
-  } }), process.env.NODE_ENV !== "production" && (mve(E, A), j.warnTooManyClasses = function(W, F) {
+  } }), "development" !== "production" && (mve(E, A), j.warnTooManyClasses = function(W, F) {
     var k = {}, U = !1;
     return function(re) {
       if (!U && (k[re] = !0, Object.keys(k).length >= 200)) {
@@ -53009,11 +53009,11 @@ var S$ = function(e) {
 f$.forEach(function(e) {
   _$[e] = S$(e);
 });
-process.env.NODE_ENV !== "production" && typeof navigator < "u" && navigator.product === "ReactNative" && console.warn(`It looks like you've imported 'styled-components' on React Native.
+"development" !== "production" && typeof navigator < "u" && navigator.product === "ReactNative" && console.warn(`It looks like you've imported 'styled-components' on React Native.
 Perhaps you're looking to import 'styled-components/native'?
 Read more about this at https://www.styled-components.com/docs/basics#react-native`);
 var pC = "__sc-".concat(F0, "__");
-process.env.NODE_ENV !== "production" && process.env.NODE_ENV !== "test" && typeof window < "u" && (window[pC] || (window[pC] = 0), window[pC] === 1 && console.warn(`It looks like there are several instances of 'styled-components' initialized in this application. This may cause dynamic styles to not render properly, errors during the rehydration process, a missing theme prop, and makes your application bigger without good reason.
+"development" !== "production" && "development" !== "test" && typeof window < "u" && (window[pC] || (window[pC] = 0), window[pC] === 1 && console.warn(`It looks like there are several instances of 'styled-components' initialized in this application. This may cause dynamic styles to not render properly, errors during the rehydration process, a missing theme prop, and makes your application bigger without good reason.
 
 See https://s-c.sh/2BAXzed for more info.`), window[pC] += 1);
 const Jve = _$.div({
@@ -53227,7 +53227,7 @@ function vu(e) {
 function Yo(e) {
   for (var t = arguments.length, n = Array(t > 1 ? t - 1 : 0), a = 1; a < t; a++)
     n[a - 1] = arguments[a];
-  if (process.env.NODE_ENV !== "production") {
+  if ("development" !== "production") {
     var o = fge[e], s = o ? typeof o == "function" ? o.apply(null, n) : o : "unknown error nr: " + e;
     throw Error("[Immer] " + s);
   }
@@ -53310,7 +53310,7 @@ function l1(e) {
   return t || Yo(18, e), t;
 }
 function jB() {
-  return process.env.NODE_ENV === "production" || av || Yo(0), av;
+  return "development" === "production" || av || Yo(0), av;
 }
 function P3(e, t) {
   t && (l1("Patches"), e.u = [], e.s = [], e.v = t);
@@ -53355,7 +53355,7 @@ function l2(e, t, n) {
   return a.o;
 }
 function $B(e, t, n, a, o, s, f) {
-  if (process.env.NODE_ENV !== "production" && o === n && Yo(5), P0(o)) {
+  if ("development" !== "production" && o === n && Yo(5), P0(o)) {
     var p = l2(e, o, s && t && t.i !== 3 && !$b(t.R, a) ? s.concat(a) : void 0);
     if (O$(n, a, p), !P0(p))
       return;
@@ -53490,9 +53490,9 @@ y9(Gb, function(e, t) {
     return arguments[0] = arguments[0][0], t.apply(this, arguments);
   };
 }), Iy.deleteProperty = function(e, t) {
-  return process.env.NODE_ENV !== "production" && isNaN(parseInt(t)) && Yo(13), Iy.set.call(this, e, t, void 0);
+  return "development" !== "production" && isNaN(parseInt(t)) && Yo(13), Iy.set.call(this, e, t, void 0);
 }, Iy.set = function(e, t, n) {
-  return process.env.NODE_ENV !== "production" && t !== "length" && isNaN(parseInt(t)) && Yo(14), Gb.set.call(this, e[0], t, n, e[0]);
+  return "development" !== "production" && t !== "length" && isNaN(parseInt(t)) && Yo(14), Gb.set.call(this, e[0], t, n, e[0]);
 };
 var mge = function() {
   function e(n) {
@@ -53559,7 +53559,7 @@ var mge = function() {
     return o[zs].C = !0, Hb(a), o;
   }, t.finishDraft = function(n, a) {
     var o = n && n[zs];
-    process.env.NODE_ENV !== "production" && (o && o.C || Yo(9), o.I && Yo(10));
+    "development" !== "production" && (o && o.C || Yo(9), o.I && Yo(10));
     var s = o.A;
     return P3(s, a), I3(void 0, s);
   }, t.setAutoFreeze = function(n) {
@@ -58377,7 +58377,7 @@ function W$(e, t) {
   function o(f, p, m) {
     m === void 0 && (m = t);
     var g = a + f;
-    if (process.env.NODE_ENV !== "production") {
+    if ("development" !== "production") {
       if (n[g])
         throw new Error("Duplicate action type: " + g);
       n[g] = !0;
