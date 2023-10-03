@@ -49373,7 +49373,7 @@ const S0e = {
   handle: ({ context: e }, t) => (e.messages.push({ type: Wd.VIDEO, payload: t.payload }), e)
 }, a6 = Xe.createContext(null), R0e = ({ children: e }) => {
   const t = Xe.useMemo(() => T0e(), []), n = KI({
-    verify: { projectID: "6519783a7db1bb00087edea1" },
+    verify: { projectID: "65170c87ccd3270007812233" },
     session: { userID: `anonymous-${Math.random()}` },
     traces: [b0e, S0e, w0e, _0e, O0e((o) => t.emit("live_agent", o))]
   }), a = (o, s) => t.on(o, s);
