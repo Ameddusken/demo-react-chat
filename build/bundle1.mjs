@@ -61330,7 +61330,7 @@ const YF = "session:user_id", HCe = "session:conversation_id", WF = new Ym({ bas
     talkToRobot: m,
     sendUserReply: C
   };
-}, GCe = "https://picsum.photos/seed/1/200/300", V3 = "https://picsum.photos/seed/1/80/80", YCe = () => {
+}, GCe = "https://raw.githubusercontent.com/Ameddusken/demo-react-chat/aac7ef192c4a70695342c2ae6df4f4dee5144d2e/Black%20%26%20White%20Minimalist%20Aesthetic%20Initials%20Font%20Logo.png", V3 = "https://raw.githubusercontent.com/Ameddusken/demo-react-chat/aac7ef192c4a70695342c2ae6df4f4dee5144d2e/Black%20%26%20White%20Minimalist%20Aesthetic%20Initials%20Font%20Logo.png", YCe = () => {
   const [e, t] = Xe.useState(!1), { runtime: n } = Xe.useContext(a6), a = VCe(), o = async () => {
     t(!0), await n.launch();
   }, s = () => {
