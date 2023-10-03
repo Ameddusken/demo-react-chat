@@ -31231,11 +31231,11 @@ const cS = ai(Wa.BUTTON), aI = tn("button", {
         !o || (a == null || a(o), s(""));
       }
     }), e && /* @__PURE__ */ Na(OI, {
-      children: ["Assistant ⚡️ by", /* @__PURE__ */ At("a", {
+      children: ["", /* @__PURE__ */ At("a", {
         target: "_blank",
-        href: "https://voiceflow.com",
+        href: "",
         rel: "noreferrer",
-        children: "Voiceflow"
+        children: ""
       })]
     })]
   });
