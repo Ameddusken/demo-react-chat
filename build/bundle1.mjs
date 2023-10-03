@@ -61376,7 +61376,8 @@ const YF = "session:user_id", HCe = "session:conversation_id", WF = new Ym({ bas
       style: {
         position: "fixed",
         right: "2rem",
-        bottom: "2rem"
+        bottom: "2rem",
+        zIndex: 100
       },
       children: /* @__PURE__ */ Ga.jsx(n6, { onClick: o })
     }
