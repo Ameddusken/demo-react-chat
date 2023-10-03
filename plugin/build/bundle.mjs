@@ -2126,7 +2126,7 @@ Check the top-level render call using <` + c + ">.");
 }
 "development" === "production" ? Nr.exports = Bt() : Nr.exports = zt();
 var pt = Nr.exports;
-const qt = () => /* @__PURE__ */ pt.jsx("div", { style: { minHeight: 400 }, children: /* @__PURE__ */ pt.jsx("iframe", { height: "450px", width: "100%", title: "tetris", src: "https://app.geckobooking.dk/site/index.php?id=3129&icCode=ae60ba7c82b2eb666b63ac13480a18d9b3129" }) }), vt = {
+const qt = () => /* @__PURE__ */ pt.jsx("div", { style: { minHeight: 400 }, children: /* @__PURE__ */ pt.jsx("iframe", { overflow: "scroll", height: "450px", width: "100%", title: "tetris", src: "https://app.geckobooking.dk/site/index.php?id=3129&icCode=ae60ba7c82b2eb666b63ac13480a18d9b3129" }) }), vt = {
   name: "tetris",
   Message: qt
 };
