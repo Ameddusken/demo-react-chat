@@ -61372,7 +61372,7 @@ const YF = "session:user_id", HCe = "session:conversation_id", WF = new Ym({ bas
     "span",
     {
       style: {
-        position: "absolute",
+        position: "fixed",
         right: "2rem",
         bottom: "2rem"
       },
