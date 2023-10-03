@@ -61341,8 +61341,8 @@ const YF = "session:user_id", HCe = "session:conversation_id", WF = new Ym({ bas
   return e ? /* @__PURE__ */ Ga.jsx(Jve, { children: /* @__PURE__ */ Ga.jsx(A0e.Container, { children: /* @__PURE__ */ Ga.jsx(dI, { ...n, children: /* @__PURE__ */ Ga.jsxs(
     t6,
     {
-      title: "My Assistant",
-      description: "welcome to my assistant",
+      title: "N'age",
+      description: "Vores virtuelle assistent er lavet for at hjælpe dig!",
       image: GCe,
       avatar: V3,
       withWatermark: !0,
