@@ -53026,7 +53026,8 @@ const Jve = _$.div({
   borderRadius: "8px",
   overflow: "hidden",
   height: "90%",
-  capheight: "800px",
+  maxHeight: "800px",
+  zindex: "100",
   "@media (max-width: 768px)": {
     position: "fixed",
     top: 0,
