@@ -13,18 +13,18 @@ function Ut() {
   if (ct)
     return g;
   ct = 1;
-  var X = Symbol.for("react.element"), y = Symbol.for("react.portal"), Re = Symbol.for("react.fragment"), Q = Symbol.for("react.strict_mode"), pe = Symbol.for("react.profiler"), te = Symbol.for("react.provider"), ne = Symbol.for("react.context"), Z = Symbol.for("react.forward_ref"), N = Symbol.for("react.suspense"), ee = Symbol.for("react.memo"), L = Symbol.for("react.lazy"), U = Symbol.iterator;
+  var K = Symbol.for("react.element"), y = Symbol.for("react.portal"), Re = Symbol.for("react.fragment"), Q = Symbol.for("react.strict_mode"), pe = Symbol.for("react.profiler"), te = Symbol.for("react.provider"), ne = Symbol.for("react.context"), Z = Symbol.for("react.forward_ref"), N = Symbol.for("react.suspense"), ee = Symbol.for("react.memo"), L = Symbol.for("react.lazy"), U = Symbol.iterator;
   function re(n) {
     return n === null || typeof n != "object" ? null : (n = U && n[U] || n["@@iterator"], typeof n == "function" ? n : null);
   }
-  var K = { isMounted: function() {
+  var G = { isMounted: function() {
     return !1;
   }, enqueueForceUpdate: function() {
   }, enqueueReplaceState: function() {
   }, enqueueSetState: function() {
   } }, ce = Object.assign, Ie = {};
   function ae(n, s, m) {
-    this.props = n, this.context = s, this.refs = Ie, this.updater = m || K;
+    this.props = n, this.context = s, this.refs = Ie, this.updater = m || G;
   }
   ae.prototype.isReactComponent = {}, ae.prototype.setState = function(n, s) {
     if (typeof n != "object" && typeof n != "function" && n != null)
@@ -37,7 +37,7 @@ function Ut() {
   }
   oe.prototype = ae.prototype;
   function I(n, s, m) {
-    this.props = n, this.context = s, this.refs = Ie, this.updater = m || K;
+    this.props = n, this.context = s, this.refs = Ie, this.updater = m || G;
   }
   var me = I.prototype = new oe();
   me.constructor = I, ce(me, ae.prototype), me.isPureReactComponent = !0;
@@ -58,13 +58,13 @@ function Ut() {
     if (n && n.defaultProps)
       for (C in T = n.defaultProps, T)
         _[C] === void 0 && (_[C] = T[C]);
-    return { $$typeof: X, type: n, key: P, ref: k, props: _, _owner: z.current };
+    return { $$typeof: K, type: n, key: P, ref: k, props: _, _owner: z.current };
   }
   function Ce(n, s) {
-    return { $$typeof: X, type: n.type, key: s, ref: n.ref, props: n.props, _owner: n._owner };
+    return { $$typeof: K, type: n.type, key: s, ref: n.ref, props: n.props, _owner: n._owner };
   }
   function we(n) {
-    return typeof n == "object" && n !== null && n.$$typeof === X;
+    return typeof n == "object" && n !== null && n.$$typeof === K;
   }
   function Ye(n) {
     var s = { "=": "=0", ":": "=2" };
@@ -76,7 +76,7 @@ function Ut() {
   function H(n, s) {
     return typeof n == "object" && n !== null && n.key != null ? Ye("" + n.key) : s.toString(36);
   }
-  function G(n, s, m, C, _) {
+  function J(n, s, m, C, _) {
     var P = typeof n;
     (P === "undefined" || P === "boolean") && (n = null);
     var k = !1;
@@ -90,24 +90,24 @@ function Ut() {
           break;
         case "object":
           switch (n.$$typeof) {
-            case X:
+            case K:
             case y:
               k = !0;
           }
       }
     if (k)
-      return k = n, _ = _(k), n = C === "" ? "." + H(k, 0) : C, ie(_) ? (m = "", n != null && (m = n.replace(Se, "$&/") + "/"), G(_, s, m, "", function(W) {
+      return k = n, _ = _(k), n = C === "" ? "." + H(k, 0) : C, ie(_) ? (m = "", n != null && (m = n.replace(Se, "$&/") + "/"), J(_, s, m, "", function(W) {
         return W;
       })) : _ != null && (we(_) && (_ = Ce(_, m + (!_.key || k && k.key === _.key ? "" : ("" + _.key).replace(Se, "$&/") + "/") + n)), s.push(_)), 1;
     if (k = 0, C = C === "" ? "." : C + ":", ie(n))
       for (var T = 0; T < n.length; T++) {
         P = n[T];
         var w = C + H(P, T);
-        k += G(P, s, m, w, _);
+        k += J(P, s, m, w, _);
       }
     else if (w = re(n), typeof w == "function")
       for (n = w.call(n), T = 0; !(P = n.next()).done; )
-        P = P.value, w = C + H(P, T++), k += G(P, s, m, w, _);
+        P = P.value, w = C + H(P, T++), k += J(P, s, m, w, _);
     else if (P === "object")
       throw s = String(n), Error("Objects are not valid as a React child (found: " + (s === "[object Object]" ? "object with keys {" + Object.keys(n).join(", ") + "}" : s) + "). If you meant to render a collection of children, use an array instead.");
     return k;
@@ -116,7 +116,7 @@ function Ut() {
     if (n == null)
       return n;
     var C = [], _ = 0;
-    return G(n, C, "", "", function(P) {
+    return J(n, C, "", "", function(P) {
       return s.call(m, P, _++);
     }), C;
   }
@@ -170,7 +170,7 @@ function Ut() {
         T[W] = arguments[W + 2];
       C.children = T;
     }
-    return { $$typeof: X, type: n.type, key: _, ref: P, props: C, _owner: k };
+    return { $$typeof: K, type: n.type, key: _, ref: P, props: C, _owner: k };
   }, g.createContext = function(n) {
     return n = { $$typeof: ne, _currentValue: n, _currentValue2: n, _threadCount: 0, Provider: null, Consumer: null, _defaultValue: null, _globalName: null }, n.Provider = { $$typeof: te, _context: n }, n.Consumer = n;
   }, g.createElement = ve, g.createFactory = function(n) {
@@ -238,10 +238,10 @@ var Je = { exports: {} };
 Je.exports;
 var lt;
 function Yt() {
-  return lt || (lt = 1, function(X, y) {
-    'development' !== "production" && function() {
+  return lt || (lt = 1, function(K, y) {
+    process.env.NODE_ENV !== "production" && function() {
       typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ < "u" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart == "function" && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(new Error());
-      var Re = "18.2.0", Q = Symbol.for("react.element"), pe = Symbol.for("react.portal"), te = Symbol.for("react.fragment"), ne = Symbol.for("react.strict_mode"), Z = Symbol.for("react.profiler"), N = Symbol.for("react.provider"), ee = Symbol.for("react.context"), L = Symbol.for("react.forward_ref"), U = Symbol.for("react.suspense"), re = Symbol.for("react.suspense_list"), K = Symbol.for("react.memo"), ce = Symbol.for("react.lazy"), Ie = Symbol.for("react.offscreen"), ae = Symbol.iterator, oe = "@@iterator";
+      var Re = "18.2.0", Q = Symbol.for("react.element"), pe = Symbol.for("react.portal"), te = Symbol.for("react.fragment"), ne = Symbol.for("react.strict_mode"), Z = Symbol.for("react.profiler"), N = Symbol.for("react.provider"), ee = Symbol.for("react.context"), L = Symbol.for("react.forward_ref"), U = Symbol.for("react.suspense"), re = Symbol.for("react.suspense_list"), G = Symbol.for("react.memo"), ce = Symbol.for("react.lazy"), Ie = Symbol.for("react.offscreen"), ae = Symbol.iterator, oe = "@@iterator";
       function I(e) {
         if (e === null || typeof e != "object")
           return null;
@@ -279,7 +279,7 @@ function Yt() {
         var r = le.getCurrentStack;
         return r && (e += r() || ""), e;
       };
-      var we = !1, Ye = !1, Se = !1, H = !1, G = !1, Y = {
+      var we = !1, Ye = !1, Se = !1, H = !1, J = !1, Y = {
         ReactCurrentDispatcher: me,
         ReactCurrentBatchConfig: ie,
         ReactCurrentOwner: z
@@ -483,7 +483,7 @@ function Yt() {
               return ke(a._context) + ".Provider";
             case L:
               return Qe(e, e.render, "ForwardRef");
-            case K:
+            case G:
               var o = e.displayName || null;
               return o !== null ? o : de(e.type) || "Memo";
             case ce: {
@@ -884,7 +884,7 @@ Your code should look like:
         return a;
       }
       function jr(e) {
-        e != null && e.$$typeof === K ? d("forwardRef requires a render function but received a `memo` component. Instead of forwardRef(memo(...)), use memo(forwardRef(...)).") : typeof e != "function" ? d("forwardRef requires a render function but was given %s.", e === null ? "null" : typeof e) : e.length !== 0 && e.length !== 2 && d("forwardRef render functions accept exactly two parameters: props and ref. %s", e.length === 1 ? "Did you forget to use the ref parameter?" : "Any additional parameter will be undefined."), e != null && (e.defaultProps != null || e.propTypes != null) && d("forwardRef render functions do not support propTypes or defaultProps. Did you accidentally pass a React component?");
+        e != null && e.$$typeof === G ? d("forwardRef requires a render function but received a `memo` component. Instead of forwardRef(memo(...)), use memo(forwardRef(...)).") : typeof e != "function" ? d("forwardRef requires a render function but was given %s.", e === null ? "null" : typeof e) : e.length !== 0 && e.length !== 2 && d("forwardRef render functions accept exactly two parameters: props and ref. %s", e.length === 1 ? "Did you forget to use the ref parameter?" : "Any additional parameter will be undefined."), e != null && (e.defaultProps != null || e.propTypes != null) && d("forwardRef render functions do not support propTypes or defaultProps. Did you accidentally pass a React component?");
         var r = {
           $$typeof: L,
           render: e
@@ -907,7 +907,7 @@ Your code should look like:
       var t;
       t = Symbol.for("react.module.reference");
       function i(e) {
-        return !!(typeof e == "string" || typeof e == "function" || e === te || e === Z || G || e === ne || e === U || e === re || H || e === Ie || we || Ye || Se || typeof e == "object" && e !== null && (e.$$typeof === ce || e.$$typeof === K || e.$$typeof === N || e.$$typeof === ee || e.$$typeof === L || // This needs to include all possible module reference object
+        return !!(typeof e == "string" || typeof e == "function" || e === te || e === Z || J || e === ne || e === U || e === re || H || e === Ie || we || Ye || Se || typeof e == "object" && e !== null && (e.$$typeof === ce || e.$$typeof === G || e.$$typeof === N || e.$$typeof === ee || e.$$typeof === L || // This needs to include all possible module reference object
         // types supported by any Flight configuration anywhere since
         // we don't know which Flight build this will end up being used
         // with.
@@ -916,7 +916,7 @@ Your code should look like:
       function c(e, r) {
         i(e) || d("memo: The first argument must be a component. Instead received: %s", e === null ? "null" : typeof e);
         var a = {
-          $$typeof: K,
+          $$typeof: G,
           type: e,
           compare: r === void 0 ? null : r
         };
@@ -975,7 +975,7 @@ See https://reactjs.org/link/invalid-hook-call for tips about how to debug and f
         var a = l();
         return a.useLayoutEffect(e, r);
       }
-      function J(e, r) {
+      function X(e, r) {
         var a = l();
         return a.useCallback(e, r);
       }
@@ -1185,7 +1185,7 @@ See https://reactjs.org/link/invalid-hook-call for tips about how to debug and f
           switch (e.$$typeof) {
             case L:
               return Ct(e.render);
-            case K:
+            case G:
               return fr(e.type, r, a);
             case ce: {
               var o = e, u = o._payload, p = o._init;
@@ -1304,7 +1304,7 @@ Check the top-level render call using <` + a + ">.");
             a = r.propTypes;
           else if (typeof r == "object" && (r.$$typeof === L || // Note: Memo only checks outer props here.
           // Inner props are checked in the reconciler.
-          r.$$typeof === K))
+          r.$$typeof === G))
             a = r.propTypes;
           else
             return;
@@ -1384,8 +1384,8 @@ Check the top-level render call using <` + a + ">.");
       function Dt(e) {
         if (pr === null)
           try {
-            var r = ("require" + Math.random()).slice(0, 7), a = X && X[r];
-            pr = a.call(X, "timers").setImmediate;
+            var r = ("require" + Math.random()).slice(0, 7), a = K && K[r];
+            pr = a.call(K, "timers").setImmediate;
           } catch {
             pr = function(u) {
               at === !1 && (at = !0, typeof MessageChannel > "u" && d("This browser does not have a MessageChannel implementation, so enqueuing tasks via await act(async () => ...) will fail. Please file an issue at https://github.com/facebook/react/issues if you encounter this warning."));
@@ -1492,13 +1492,13 @@ Check the top-level render call using <` + a + ">.");
         toArray: Tr,
         only: ir
       };
-      y.Children = Lt, y.Component = _, y.Fragment = te, y.Profiler = Z, y.PureComponent = W, y.StrictMode = ne, y.Suspense = U, y.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = Y, y.cloneElement = $t, y.createContext = ur, y.createElement = It, y.createFactory = Nt, y.createRef = hr, y.forwardRef = jr, y.isValidElement = _e, y.lazy = kr, y.memo = c, y.startTransition = At, y.unstable_act = Ft, y.useCallback = J, y.useContext = R, y.useDebugValue = se, y.useDeferredValue = ht, y.useEffect = B, y.useId = gt, y.useImperativeHandle = sr, y.useInsertionEffect = A, y.useLayoutEffect = $, y.useMemo = Ee, y.useReducer = b, y.useRef = h, y.useState = S, y.useSyncExternalStore = _t, y.useTransition = mt, y.version = Re, typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ < "u" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop == "function" && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
+      y.Children = Lt, y.Component = _, y.Fragment = te, y.Profiler = Z, y.PureComponent = W, y.StrictMode = ne, y.Suspense = U, y.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = Y, y.cloneElement = $t, y.createContext = ur, y.createElement = It, y.createFactory = Nt, y.createRef = hr, y.forwardRef = jr, y.isValidElement = _e, y.lazy = kr, y.memo = c, y.startTransition = At, y.unstable_act = Ft, y.useCallback = X, y.useContext = R, y.useDebugValue = se, y.useDeferredValue = ht, y.useEffect = B, y.useId = gt, y.useImperativeHandle = sr, y.useInsertionEffect = A, y.useLayoutEffect = $, y.useMemo = Ee, y.useReducer = b, y.useRef = h, y.useState = S, y.useSyncExternalStore = _t, y.useTransition = mt, y.version = Re, typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ < "u" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop == "function" && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
     }();
   }(Je, Je.exports)), Je.exports;
 }
 var ft;
 function yt() {
-  return ft || (ft = 1, 'development' === "production" ? mr.exports = Ut() : mr.exports = Yt()), mr.exports;
+  return ft || (ft = 1, process.env.NODE_ENV === "production" ? mr.exports = Ut() : mr.exports = Yt()), mr.exports;
 }
 /**
  * @license React
@@ -1514,16 +1514,16 @@ function Bt() {
   if (dt)
     return Ke;
   dt = 1;
-  var X = yt(), y = Symbol.for("react.element"), Re = Symbol.for("react.fragment"), Q = Object.prototype.hasOwnProperty, pe = X.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, te = { key: !0, ref: !0, __self: !0, __source: !0 };
+  var K = yt(), y = Symbol.for("react.element"), Re = Symbol.for("react.fragment"), Q = Object.prototype.hasOwnProperty, pe = K.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, te = { key: !0, ref: !0, __self: !0, __source: !0 };
   function ne(Z, N, ee) {
-    var L, U = {}, re = null, K = null;
-    ee !== void 0 && (re = "" + ee), N.key !== void 0 && (re = "" + N.key), N.ref !== void 0 && (K = N.ref);
+    var L, U = {}, re = null, G = null;
+    ee !== void 0 && (re = "" + ee), N.key !== void 0 && (re = "" + N.key), N.ref !== void 0 && (G = N.ref);
     for (L in N)
       Q.call(N, L) && !te.hasOwnProperty(L) && (U[L] = N[L]);
     if (Z && Z.defaultProps)
       for (L in N = Z.defaultProps, N)
         U[L] === void 0 && (U[L] = N[L]);
-    return { $$typeof: y, type: Z, key: re, ref: K, props: U, _owner: pe.current };
+    return { $$typeof: y, type: Z, key: re, ref: G, props: U, _owner: pe.current };
   }
   return Ke.Fragment = Re, Ke.jsx = ne, Ke.jsxs = ne, Ke;
 }
@@ -1539,15 +1539,15 @@ var Ge = {};
  */
 var pt;
 function qt() {
-  return pt || (pt = 1, 'development' !== "production" && function() {
-    var X = yt(), y = Symbol.for("react.element"), Re = Symbol.for("react.portal"), Q = Symbol.for("react.fragment"), pe = Symbol.for("react.strict_mode"), te = Symbol.for("react.profiler"), ne = Symbol.for("react.provider"), Z = Symbol.for("react.context"), N = Symbol.for("react.forward_ref"), ee = Symbol.for("react.suspense"), L = Symbol.for("react.suspense_list"), U = Symbol.for("react.memo"), re = Symbol.for("react.lazy"), K = Symbol.for("react.offscreen"), ce = Symbol.iterator, Ie = "@@iterator";
+  return pt || (pt = 1, process.env.NODE_ENV !== "production" && function() {
+    var K = yt(), y = Symbol.for("react.element"), Re = Symbol.for("react.portal"), Q = Symbol.for("react.fragment"), pe = Symbol.for("react.strict_mode"), te = Symbol.for("react.profiler"), ne = Symbol.for("react.provider"), Z = Symbol.for("react.context"), N = Symbol.for("react.forward_ref"), ee = Symbol.for("react.suspense"), L = Symbol.for("react.suspense_list"), U = Symbol.for("react.memo"), re = Symbol.for("react.lazy"), G = Symbol.for("react.offscreen"), ce = Symbol.iterator, Ie = "@@iterator";
     function ae(t) {
       if (t === null || typeof t != "object")
         return null;
       var i = ce && t[ce] || t[Ie];
       return typeof i == "function" ? i : null;
     }
-    var oe = X.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+    var oe = K.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
     function I(t) {
       {
         for (var i = arguments.length, c = new Array(i > 1 ? i - 1 : 0), l = 1; l < i; l++)
@@ -1568,7 +1568,7 @@ function qt() {
     var ie = !1, M = !1, z = !1, le = !1, ve = !1, Ce;
     Ce = Symbol.for("react.module.reference");
     function we(t) {
-      return !!(typeof t == "string" || typeof t == "function" || t === Q || t === te || ve || t === pe || t === ee || t === L || le || t === K || ie || M || z || typeof t == "object" && t !== null && (t.$$typeof === re || t.$$typeof === U || t.$$typeof === ne || t.$$typeof === Z || t.$$typeof === N || // This needs to include all possible module reference object
+      return !!(typeof t == "string" || typeof t == "function" || t === Q || t === te || ve || t === pe || t === ee || t === L || le || t === G || ie || M || z || typeof t == "object" && t !== null && (t.$$typeof === re || t.$$typeof === U || t.$$typeof === ne || t.$$typeof === Z || t.$$typeof === N || // This needs to include all possible module reference object
       // types supported by any Flight configuration anywhere since
       // we don't know which Flight build this will end up being used
       // with.
@@ -1629,7 +1629,7 @@ function qt() {
         }
       return null;
     }
-    var G = Object.assign, Y = 0, ue, d, fe, Te, n, s, m;
+    var J = Object.assign, Y = 0, ue, d, fe, Te, n, s, m;
     function C() {
     }
     C.__reactDisabledLog = !0;
@@ -1665,25 +1665,25 @@ function qt() {
             writable: !0
           };
           Object.defineProperties(console, {
-            log: G({}, t, {
+            log: J({}, t, {
               value: ue
             }),
-            info: G({}, t, {
+            info: J({}, t, {
               value: d
             }),
-            warn: G({}, t, {
+            warn: J({}, t, {
               value: fe
             }),
-            error: G({}, t, {
+            error: J({}, t, {
               value: Te
             }),
-            group: G({}, t, {
+            group: J({}, t, {
               value: n
             }),
-            groupCollapsed: G({}, t, {
+            groupCollapsed: J({}, t, {
               value: s
             }),
-            groupEnd: G({}, t, {
+            groupEnd: J({}, t, {
               value: m
             })
           });
@@ -1767,9 +1767,9 @@ function qt() {
               if (A !== 1 || $ !== 1)
                 do
                   if (A--, $--, $ < 0 || h[A] !== B[$]) {
-                    var J = `
+                    var X = `
 ` + h[A].replace(" at new ", " at ");
-                    return t.displayName && J.includes("<anonymous>") && (J = J.replace("<anonymous>", t.displayName)), typeof t == "function" && he.set(t, J), J;
+                    return t.displayName && X.includes("<anonymous>") && (X = X.replace("<anonymous>", t.displayName)), typeof t == "function" && he.set(t, X), X;
                   }
                 while (A >= 1 && $ >= 0);
               break;
@@ -2099,17 +2099,17 @@ Check the top-level render call using <` + c + ">.");
         if ($ == null)
           return $;
         if (b) {
-          var J = i.children;
-          if (J !== void 0)
+          var X = i.children;
+          if (X !== void 0)
             if (l)
-              if (Le(J)) {
-                for (var Ee = 0; Ee < J.length; Ee++)
-                  ur(J[Ee], t);
-                Object.freeze && Object.freeze(J);
+              if (Le(X)) {
+                for (var Ee = 0; Ee < X.length; Ee++)
+                  ur(X[Ee], t);
+                Object.freeze && Object.freeze(X);
               } else
                 I("React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead.");
             else
-              ur(J, t);
+              ur(X, t);
         }
         return t === Q ? qe($) : Fe($), $;
       }
@@ -2124,9 +2124,14 @@ Check the top-level render call using <` + c + ">.");
     Ge.Fragment = Q, Ge.jsx = kr, Ge.jsxs = jr;
   }()), Ge;
 }
-'development' === "production" ? Mr.exports = Bt() : Mr.exports = qt();
+process.env.NODE_ENV === "production" ? Mr.exports = Bt() : Mr.exports = qt();
 var F = Mr.exports;
-const zt = () => /* @__PURE__ */ F.jsx("div", { className: "wrapper", children: /* @__PURE__ */ F.jsxs("div", { className: "inner", "data-onvisible-trigger": 1, style: { paddingLeft: "2rem", paddingRight: "2rem" }, children: [
+function zt() {
+  console.log({
+    action: { type: "success" }
+  });
+}
+const Ht = () => /* @__PURE__ */ F.jsx("div", { className: "wrapper", children: /* @__PURE__ */ F.jsxs("div", { className: "inner", "data-onvisible-trigger": 1, style: { paddingLeft: "2rem", paddingRight: "2rem" }, children: [
   /* @__PURE__ */ F.jsx("h1", { id: "text17", className: "style2", children: "Kontakt" }),
   /* @__PURE__ */ F.jsxs("form", { target: "hiddenFrame", action: "https://bujeconsulting.dk/post/contact", id: "form02", method: "post", className: "style2", children: [
     /* @__PURE__ */ F.jsxs("div", { className: "inner", children: [
@@ -2146,7 +2151,7 @@ const zt = () => /* @__PURE__ */ F.jsx("div", { className: "wrapper", children: 
         /* @__PURE__ */ F.jsx("label", { style: { color: "#0D0C0C" }, htmlFor: "form02-message", children: "Besked" }),
         /* @__PURE__ */ F.jsx("textarea", { "data-gramm_editor": "false", name: "message", id: "form02-message", maxLength: 16384, required: !0, defaultValue: "" })
       ] }),
-      /* @__PURE__ */ F.jsx("div", { className: "actions", children: /* @__PURE__ */ F.jsxs("button", { type: "submit", children: [
+      /* @__PURE__ */ F.jsx("div", { className: "actions", children: /* @__PURE__ */ F.jsxs("button", { type: "submit", onClick: zt, children: [
         /* @__PURE__ */ F.jsx("svg", { children: /* @__PURE__ */ F.jsx("use", { xlinkHref: "#icon-67ad41ecc66a1b1cd00d0d3b20c00017" }) }),
         /* @__PURE__ */ F.jsx("span", { className: "label", children: "Send" })
       ] }) })
@@ -2155,7 +2160,7 @@ const zt = () => /* @__PURE__ */ F.jsx("div", { className: "wrapper", children: 
   ] })
 ] }) }), vt = {
   name: "tetris",
-  Message: zt
+  Message: Ht
 };
 window.vfplugin = Object.assign(window.vfplugin ?? {}, {
   [vt.name]: vt
