@@ -49373,7 +49373,7 @@ const S0e = {
   handle: ({ context: e }, t) => (e.messages.push({ type: Wd.VIDEO, payload: t.payload }), e)
 }, a6 = Xe.createContext(null), R0e = ({ children: e }) => {
   const t = Xe.useMemo(() => T0e(), []), n = KI({
-    verify: { projectID: "65170c87ccd3270007812233" },
+    verify: { projectID: "651d61657db1bb00087f1290" },
     session: { userID: `anonymous-${Math.random()}` },
     traces: [b0e, S0e, w0e, _0e, O0e((o) => t.emit("live_agent", o))]
   }), a = (o, s) => t.on(o, s);
@@ -61341,8 +61341,8 @@ const YF = "session:user_id", HCe = "session:conversation_id", WF = new Ym({ bas
   return e ? /* @__PURE__ */ Ga.jsx(Jve, { children: /* @__PURE__ */ Ga.jsx(A0e.Container, { children: /* @__PURE__ */ Ga.jsx(dI, { ...n, children: /* @__PURE__ */ Ga.jsxs(
     t6,
     {
-      title: "Nage",
-      description: "Vores virtuelle assistent er lavet for at hjælpe dig!",
+      title: "Buje Consulting",
+      description: "Vores virtuelle assistent står altid klar til at hjælpe dig!",
       image: GCe,
       avatar: V3,
       withWatermark: !0,
