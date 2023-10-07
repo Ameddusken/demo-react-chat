@@ -2128,7 +2128,7 @@ Check the top-level render call using <` + c + ">.");
 var j = Mr.exports;
 const zt = () => /* @__PURE__ */ j.jsx("div", { className: "wrapper", children: /* @__PURE__ */ j.jsxs("div", { className: "inner", "data-onvisible-trigger": 1, style: { paddingLeft: "2rem", paddingRight: "2rem" }, children: [
   /* @__PURE__ */ j.jsx("h1", { id: "text17", className: "style2", children: "Kontakt" }),
-  /* @__PURE__ */ j.jsxs("form", { action: "https://bujeconsulting.dk/post/contact", id: "form02", method: "post", className: "style2", children: [
+  /* @__PURE__ */ j.jsxs("form", { target: "hiddenFrame", action: "https://bujeconsulting.dk/post/contact", id: "form02", method: "post", className: "style2", children: [
     /* @__PURE__ */ j.jsxs("div", { className: "inner", children: [
       /* @__PURE__ */ j.jsxs("div", { className: "field", children: [
         /* @__PURE__ */ j.jsx("label", { htmlFor: "form02-name", children: "Navn" }),
