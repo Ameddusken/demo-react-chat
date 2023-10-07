@@ -239,7 +239,7 @@ Je.exports;
 var lt;
 function Yt() {
   return lt || (lt = 1, function(X, y) {
-    process.env.NODE_ENV !== "production" && function() {
+    'development' !== "production" && function() {
       typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ < "u" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart == "function" && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(new Error());
       var Re = "18.2.0", Q = Symbol.for("react.element"), pe = Symbol.for("react.portal"), te = Symbol.for("react.fragment"), ne = Symbol.for("react.strict_mode"), Z = Symbol.for("react.profiler"), N = Symbol.for("react.provider"), ee = Symbol.for("react.context"), L = Symbol.for("react.forward_ref"), U = Symbol.for("react.suspense"), re = Symbol.for("react.suspense_list"), K = Symbol.for("react.memo"), ce = Symbol.for("react.lazy"), Ie = Symbol.for("react.offscreen"), ae = Symbol.iterator, oe = "@@iterator";
       function I(e) {
@@ -1498,7 +1498,7 @@ Check the top-level render call using <` + a + ">.");
 }
 var ft;
 function yt() {
-  return ft || (ft = 1, process.env.NODE_ENV === "production" ? mr.exports = Ut() : mr.exports = Yt()), mr.exports;
+  return ft || (ft = 1, 'development' === "production" ? mr.exports = Ut() : mr.exports = Yt()), mr.exports;
 }
 /**
  * @license React
@@ -1539,7 +1539,7 @@ var Ge = {};
  */
 var pt;
 function qt() {
-  return pt || (pt = 1, process.env.NODE_ENV !== "production" && function() {
+  return pt || (pt = 1, 'development' !== "production" && function() {
     var X = yt(), y = Symbol.for("react.element"), Re = Symbol.for("react.portal"), Q = Symbol.for("react.fragment"), pe = Symbol.for("react.strict_mode"), te = Symbol.for("react.profiler"), ne = Symbol.for("react.provider"), Z = Symbol.for("react.context"), N = Symbol.for("react.forward_ref"), ee = Symbol.for("react.suspense"), L = Symbol.for("react.suspense_list"), U = Symbol.for("react.memo"), re = Symbol.for("react.lazy"), K = Symbol.for("react.offscreen"), ce = Symbol.iterator, Ie = "@@iterator";
     function ae(t) {
       if (t === null || typeof t != "object")
@@ -2124,7 +2124,7 @@ Check the top-level render call using <` + c + ">.");
     Ge.Fragment = Q, Ge.jsx = kr, Ge.jsxs = jr;
   }()), Ge;
 }
-process.env.NODE_ENV === "production" ? Mr.exports = Bt() : Mr.exports = qt();
+'development' === "production" ? Mr.exports = Bt() : Mr.exports = qt();
 var F = Mr.exports;
 const zt = () => /* @__PURE__ */ F.jsx("div", { className: "wrapper", children: /* @__PURE__ */ F.jsxs("div", { className: "inner", "data-onvisible-trigger": 1, style: { paddingLeft: "2rem", paddingRight: "2rem" }, children: [
   /* @__PURE__ */ F.jsx("h1", { id: "text17", className: "style2", children: "Kontakt" }),
