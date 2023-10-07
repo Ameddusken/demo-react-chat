@@ -2142,7 +2142,6 @@ const zt = () => /* @__PURE__ */ j.jsx("div", { className: "wrapper", children: 
         /* @__PURE__ */ j.jsx("label", { htmlFor: "form02-phone", children: "Telefonnummer" }),
         /* @__PURE__ */ j.jsx("input", { type: "text", name: "phone", id: "form02-phone", maxLength: 64, required: !0 })
       ] }),
-      /* @__PURE__ */ j.jsx("div", { className: "field", children: /* @__PURE__ */ j.jsx("input", { type: "text", style: { display: "none" }, name: "www", id: "form02-www", placeholder: "Www", maxLength: 128 }) }),
       /* @__PURE__ */ j.jsxs("div", { className: "field", children: [
         /* @__PURE__ */ j.jsx("label", { htmlFor: "form02-message", children: "Besked" }),
         /* @__PURE__ */ j.jsx("textarea", { "data-gramm_editor": "false", name: "message", id: "form02-message", maxLength: 16384, required: !0, defaultValue: "" })
