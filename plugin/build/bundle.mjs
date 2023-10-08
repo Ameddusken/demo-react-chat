@@ -2127,7 +2127,8 @@ Check the top-level render call using <` + c + ">.");
 'development' === "production" ? Mr.exports = Bt() : Mr.exports = zt();
 var F = Mr.exports;
 function qt() {
-  const q = {
+ alert('Beskeden er sendt!')    }
+  /*const q = {
     method: "POST",
     headers: {
       accept: "application/json",
@@ -2146,9 +2147,10 @@ function qt() {
   };
   fetch("https://general-runtime.voiceflow.com/state/user/userID/interact?logs=off", q).then((p) => p.json()).then((p) => console.log(p)).catch((p) => console.error(p));
 }
+*/
 const Ht = () => /* @__PURE__ */ F.jsx("div", { className: "wrapper", children: /* @__PURE__ */ F.jsxs("div", { className: "inner", "data-onvisible-trigger": 1, style: { marginBottom: "2rem", paddingLeft: "2rem", paddingRight: "2rem" }, children: [
   /* @__PURE__ */ F.jsx("h1", { style: { color: "#0D0C0C" }, id: "text17", className: "style2", children: "Kontakt" }),
-  /* @__PURE__ */ F.jsxs("form", { target: "hiddenFrame", action: "https://bujeconsulting.dk/post/contact", id: "form02", onSubmit: alert('Beskeden er sendt!'), method: "post", className: "style2", children: [
+  /* @__PURE__ */ F.jsxs("form", { target: "hiddenFrame", action: "https://bujeconsulting.dk/post/contact", id: "form02", onSubmit: qt(), method: "post", className: "style2", children: [
     /* @__PURE__ */ F.jsxs("div", { className: "inner", children: [
       /* @__PURE__ */ F.jsxs("div", { className: "field", children: [
         /* @__PURE__ */ F.jsx("label", { style: { color: "#0D0C0C" }, htmlFor: "form02-name", children: "Navn" }),
