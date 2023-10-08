@@ -2168,7 +2168,7 @@ const Ht = () => /* @__PURE__ */ F.jsx("div", { className: "wrapper", children: 
         /* @__PURE__ */ F.jsx("label", { style: { color: "#0D0C0C" }, htmlFor: "form02-message", children: "Besked" }),
         /* @__PURE__ */ F.jsx("textarea", { "data-gramm_editor": "false", name: "message", id: "form02-message", maxLength: 16384, required: !0, defaultValue: "" })
       ] }),
-      /* @__PURE__ */ F.jsx("div", { className: "actions", children: /* @__PURE__ */ F.jsxs("button", { onClick: qt(), type: "submit", children: [
+      /* @__PURE__ */ F.jsx("div", { className: "actions", children: /* @__PURE__ */ F.jsxs("button", { onClick: qt, type: "submit", children: [
         /* @__PURE__ */ F.jsx("svg", { children: /* @__PURE__ */ F.jsx("use", { xlinkHref: "#icon-67ad41ecc66a1b1cd00d0d3b20c00017" }) }),
         /* @__PURE__ */ F.jsx("span", { className: "label", children: "Send" })
       ] }) })
