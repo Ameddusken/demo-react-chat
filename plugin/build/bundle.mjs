@@ -2150,7 +2150,7 @@ function qt() {
 */
 const Ht = () => /* @__PURE__ */ F.jsx("div", { className: "wrapper", children: /* @__PURE__ */ F.jsxs("div", { className: "inner", "data-onvisible-trigger": 1, style: { marginBottom: "2rem", paddingLeft: "2rem", paddingRight: "2rem" }, children: [
   /* @__PURE__ */ F.jsx("h1", { style: { color: "#0D0C0C" }, id: "text17", className: "style2", children: "Kontakt" }),
-  /* @__PURE__ */ F.jsxs("form", { target: "hiddenFrame", action: "https://bujeconsulting.dk/post/contact", id: "form02", method: "post", className: "style2", children: [
+  /* @__PURE__ */ F.jsxs("form", { target: "hiddenFrame", action: "https://bujeconsulting.dk/post/contact", onSubmit: qt, id: "form02", method: "post", className: "style2", children: [
     /* @__PURE__ */ F.jsxs("div", { className: "inner", children: [
       /* @__PURE__ */ F.jsxs("div", { className: "field", children: [
         /* @__PURE__ */ F.jsx("label", { style: { color: "#0D0C0C" }, htmlFor: "form02-name", children: "Navn" }),
@@ -2168,7 +2168,7 @@ const Ht = () => /* @__PURE__ */ F.jsx("div", { className: "wrapper", children: 
         /* @__PURE__ */ F.jsx("label", { style: { color: "#0D0C0C" }, htmlFor: "form02-message", children: "Besked" }),
         /* @__PURE__ */ F.jsx("textarea", { "data-gramm_editor": "false", name: "message", id: "form02-message", maxLength: 16384, required: !0, defaultValue: "" })
       ] }),
-      /* @__PURE__ */ F.jsx("div", { className: "actions", children: /* @__PURE__ */ F.jsxs("button", { onClick: qt, type: "submit", children: [
+      /* @__PURE__ */ F.jsx("div", { className: "actions", children: /* @__PURE__ */ F.jsxs("button", { type: "submit", children: [
         /* @__PURE__ */ F.jsx("svg", { children: /* @__PURE__ */ F.jsx("use", { xlinkHref: "#icon-67ad41ecc66a1b1cd00d0d3b20c00017" }) }),
         /* @__PURE__ */ F.jsx("span", { className: "label", children: "Send" })
       ] }) })
